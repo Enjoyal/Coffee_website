@@ -1,0 +1,535 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400&family=Roboto:wght@700&family=Russo+One&display=swap');
+:root{
+    --main-color:#d3ad7f;
+    --light-brown:#c68b59;
+    --brown:#402218;
+    --black:#181E21;
+    --dark:#13131a;
+    --font-family:"Poppins",sans-serif;
+    --border: 1.6px solid rgba(255,255,255,.3);
+}
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: var(--black);
+}
+
+#heading{
+    text-transform:uppercase;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    padding: 70px 0 50px 0;
+}
+#heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+
+}
+
+section{
+    padding:10px 7%;  
+}
+
+/* header section */
+
+header{
+    
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color:var(--light-brown);
+    /* background-color:#181E21;   */
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid var(--light-brown);
+}
+#header{
+    max-width: 1200px;
+    width:100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#name{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+#name h3{
+    color:var(--brown);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+
+}
+
+#name h3 span{
+    font-weight:600;
+}
+
+#name h3:hover{
+    color: white;
+}
+
+#logo{
+    /* background-color:gray; */
+    display:flex;
+    width: 40px;
+    height: 100%;
+    float: left;
+}
+
+/* #logo img{
+    margin:auto 5px;
+    margin-bottom: 29px;
+    height: 40px;
+    width: 40px;
+    float: right;
+} */
+#logo i{
+    font-size:45px;
+    color: var(--brown);
+    padding: 10px;
+}
+#logo i:hover{
+    color:white;
+
+}
+
+#navigation{
+    float: right;
+    height: 25%; 
+    margin:30px auto;
+}
+
+#navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    
+}
+
+#navigation a:last-child{
+    padding-right: 0px;
+}
+
+
+#navigation a li{
+    display: table-cell;
+    vertical-align:middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#navigation a li:hover{
+    color: var(--brown);
+    border-bottom: 2px solid var(--brown);
+    /* padding-bottom:2px; */
+}
+
+#header marquee{
+    color: white;
+}
+
+/* help section */
+#help{
+    background-color: var(--main-color);
+    /* height: 75px;
+    width: 75px; */
+    position: fixed;
+    bottom: 250px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 16px;
+    /* padding-left: 20px;
+    padding-top: 20px; */
+}
+#help a{
+    color: var(--brown);
+}
+
+#help:hover{
+    background-color:#13131a;
+    color: var(--main-color);
+}
+#help:hover a{
+    color: var(--main-color);
+    scale: 1.2;
+}
+
+/*home section*/
+
+#home{
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    background: url(./images/coffee_bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#home #content{
+    margin-top: -50px;
+    max-width: 600px;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+#home #content h3{
+
+    text-transform: uppercase;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-size: 95px;
+   
+}
+
+#home #content p{
+
+    font-size: 16px;
+    font-weight:lighter;
+    line-height:1.8;
+    padding: 1rem 0;
+    color: #ccc;
+    font-family: var(--font-family);
+}
+
+#btn{
+    margin-top: 15px;
+    display:inline-block;
+    padding: 15px 45px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#btn:hover{
+    background-color: white;
+    color:var(--brown);
+}
+
+/* coffee_types section */
+
+#coffees{
+    border: var(--border);
+}
+#coffees #coffee{
+    display:block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    /* text-align: left; */
+    line-height: 1.75;
+    text-align: justify;
+    color: white;
+    /* border: none; */
+    /* background-color: red; */
+}
+
+#coffee img{
+    float: left;
+    height: 200px;
+    width: 280px
+}
+
+#coffee #coffee-img2{
+    float: right;
+    height: 200px;
+    width: 280px
+}
+
+#coffee img:hover{
+    scale: 1.1;
+}
+
+#coffee h3{
+    margin-left: 300px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+#coffee #h3-1{
+    margin-left:0px;
+}
+
+#coffee p{
+    font-family: var(--font-family);
+    font-size:16px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+#coffee p a{
+    padding: 10px 30px;
+    font-size: 15px;
+}
+#coffee #p1{
+    margin-left:0px;
+    margin-right:300px;
+}
+
+/*menu section*/
+
+#menu #container{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:24px;
+   
+}
+#menu #container #box{
+    background-color: var(--dark);
+    border: var(--border);
+    padding: 5rem; 
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+#menu #container #box img{
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    border: var(--border);
+}
+#menu #container #box h3{
+    font-size: 20px;
+    color: white;
+}
+
+#menu #container #box #price{
+    font-size: 24px;
+}
+#menu #container #box #price span{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: line-through;
+
+}
+
+#menu #container #box a{
+    background-color:var(--main-color);
+    text-transform: capitalize;
+}
+
+#menu #container #box:hover{
+    background-color: var(--main-color);
+}
+/* #menu #container #box:hover > *{
+   color: black;
+
+}
+
+#menu #container #box:hover #price span{
+    color: black;
+} */
+
+#menu #container #box:hover a{
+    background-color:var(--brown);
+    color: white;
+}
+#menu #container #box a:hover{
+    padding: 15px 50px; 
+}
+
+/*about section*/
+
+#about #row{
+    display: flex;
+    align-items: center;
+    border:var(--border);
+    background-color: var(--dark);
+
+}
+
+#about #row #image img{
+    width: 95%;
+    padding-left: 30px;
+}
+
+#about #row #content{
+    padding: 32px;
+    color: white;
+}
+
+#about #row #content h3{
+    font-size:48px ;
+}
+#about #row #content p{
+    font-size:16px;
+    font-family: var(--font-family);
+    color: #ccc;
+    padding:16px 0 ;
+    line-height: 1.75;
+}
+
+/*contact section*/
+#contact #row{
+    display: flex;
+    align-items: center;
+    border: var(--border);
+    background-color: var(--dark);
+
+}
+
+#contact #row #map {
+    width:50%;
+    height:300px;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+#contact #row form{
+    width:50%;
+    padding:80px 32px;
+    text-align: center;
+}
+
+#contact #row form h3{
+    text-transform: uppercase;
+    font-size:48px;
+    color:var(--main-color);
+}
+
+#contact #row form #input_box{
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    background-color:var(--black);
+    border: var(--border);
+}
+
+#contact #row form #input_box span{
+    color: #fff;
+    font-size: 24px;
+    padding-left:16px ;
+
+    /* background-color: red; */
+}
+
+#contact #row form #input_box input,textarea{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-family);
+    text-transform: none;
+    background: none;
+    border: none;
+}
+
+#contact #row form #btn{
+   float: left;
+}
+
+/*footer section */
+
+footer{
+    /* background-color: var(--dark); */
+    background: var(--light-brown);
+    text-align: center;
+    
+}
+
+footer #footer{
+
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    padding: 20px;
+}
+footer #footer i{
+    color: var(--brown);
+
+
+}
+footer #footer i:hover{
+    color: #fff;
+
+}
+#footer #follow{
+    width: 50%;
+    margin: 0 25%;
+    color: var(--brown);
+    text-align: center;
+}
+#footer #follow a{
+    font-size:22px;
+    width: 20px;
+    height: 20px;
+    line-height:20px;
+    color: #fff;
+    padding: 16px;
+    margin: 4.8px;
+    /* border: var(--border);
+    border-radius: 100px; */
+}
+#footer #follow a:hover{
+    color: var(--brown);
+    scale: 1.5;
+}
+
+#footer #addrs{
+    color:var(--brown);
+    line-height:1.8;
+    
+}
+
+#footer #addrs p{
+    font-family: var(--font-family);
+    font-size:16px;
+    text-align:justify;
+}
+
+footer #foot{
+
+    padding: 0 auto;
+    text-align:center;
+    font-family: var(--font-family);
+    color: var(--brown);
+    font-size:16px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+
+}
+footer #foot i span{
+    font-size:16px;
+    padding: 6px;
+    color:var(--brown);
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-weight: bold;
+
+}
+footer #foot i{
+    color: var(--brown);
+}
+footer #foot i:hover{
+    color: #fff;
+}
+footer #foot i:hover span{
+    color: #fff;
+}
